@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="stylesheet" href=" {% static '/styles/morse.css' %}"> 
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+
+</head>
+<body>
+    <div class="nbkr">
+        <center><img src="{% static '/images/logo2.jpg' %}" alt="" width="700px" height="150"></center>
+    </div>
+    <div class="main">
+        <div class="logo">
+            <h1> MORSE TEST ON 13 BHP AMBASSADOR PETROL ENGINE </h1>
+        </div>
+        <div class="menu">
+            <a href="index"><button class="b1">HOME</button></a>
+            <a href="morseexp"><button class="b2">EXPERIMENT</button></a>
+        </div>
+          <div class="form">
+            <pre>
+<h2 class="h2"><u>AIM</u>:</h2>
+
+To conduct Morse Test
+
+<h2 class="h2"><u>APPARATUS</u>:</h2>
+
+13BHP (9.568 kW)  Ambassador Petrol Engine, 
+Tachometer, 
+Stop watch etc.,
+
+<h2 class="h2"><u>TECHNICAL DETAILS</u>:</h2>
+
+Number of cylinders = 4;      
+Firing order = 1-3-4-2;    
+ Method of cooling = Water cooling;
+Speed =1500rpm;  
+Brake Power =13BHP =9.568kW;  
+Bore =73.02 mm;  
+Stroke = 88.9mm.
+Orifice diameter =31.6 mm; 
+Cd = Coefficient of discharge = 0.6; 
+Loading = Hydraulic type.
+Dynamometer Constant  =  WN / 2000 = BHP.    
+    Where, W in kgf.
+  or WN / 2717 = Brake Power  .  
+    Where, W kgf (reading obtained on the scale)
+
+<h2 class="h2"><u>DESCRIPTION</u>:</h2>
+
+The engine is a 4-stroke, 13 BHP water cooled vertical, four cylinders Ambassador Petrol Engine. 
+The cylinders are arranged in-line. The engine is provided with a hydraulic dynamometer. 
+The loading on the shaft takes place by allowing more water into the casing. Fuel is 
+supplied from fuel tank through a three way valve. For obtaining fuel consumption, 
+fuel will be drawn from burette provided, by cutting off the fuel from the fuel tank. 
+Air is supplied throughout air filter and air tank. The quantity of air drawn into the 
+cylinder may be measured by noting down the Manometric head from U-tube water manometer. 
+Two dial gauges are provided on the panel to measure cooling water outlet temperature and 
+the exhaust gas temperature near the engine. Four DPST switches are provided on the panel 
+which are used to cut off ignition in any cylinder while conducting the Morse test. 
+Ignition in any cylinder is indicated by the glowing of bulb which is connected to the 
+LT side or from battery. Water supply is provided through a control valve for the cylinders.
+
+<h2 class="h2"><u>PROCEDURE</u>:</h2>
+
+Lubricating oil level, fuel level and water supply are checked. The engine is started with the help 
+of ignition switch. Then the water supply for cooling of the engine is given. The speed is adjusted to 
+1500 rpm using throttle. Some time is allowed for the engine to warm up and stabilize. For loading the 
+engine the handle of the hydraulic dynamometer is rotated in the direction given on the handle as 'To open' 
+this allows water to enter into the space between the impeller and the casing, thus loading the engine. With 
+the help of the locking sleeve the handle is prevented from rotation. 
+Now the engine is loaded approximately to half of the full load and the speed is adjusted to the rated speed 
+(1500 rpm) using the throttle valve.  Let the load be W kgf. This throttle position is fixed for the remaining 
+part of the experiment. The load W kgf. is noted.
+Now, the ignition to the first cylinder is cut-off by opening the DPST switch corresponding to the cylinder-1. 
+The speed  decreases to increase the speed to 1500 rpm by keeping the throttle position constant load is decreased. 
+This load is noted down as W1 kgf. After noting down the load the ignition for cylinder-1 is restored by 
+closing DPST switch for cylinder-1. Then the DPST switch for cyclider-2 is opened so that the ignition is 
+cutoff. Once again the load is adjusted so as to run the engine at the rated speed 1500 rpm. Let the load 
+be W2 kgf. Same procedure is repeated for cylinders 3 & 4. Respective loads W3 kgf. and W4 kgf. are noted 
+down. Same experiment may be conducted for different throttle positions.  
+
+<h2 class="h2"><u>CALCULATIONS</u>:</h2>
+
+Maximum load calculation: 
+
+	Brake Power = WN / 2717  = 9.568 kW
+
+	where W in Kgf. read from the scale.
+
+ Load on the engine when the ignition takes place in all the four cylinders = W kgf.
+	
+ Brake Power Developed =  WN /2717  kW = X  kW
+
+Load on the engine when the ignition in the 1st cylinder is cut off =W1 kgf.
+
+Brake Power developed =  W1*N /2717 KW = X1 KW
+
+Indicated Power of the 1st cylinder - IP1 = (X-X1) kW =
+
+
+Load on the engine when the ignition in the2nd cylinder is cut off =W2 kgf.
+
+Brake Power developed =  W2*N /2717 KW = X2 KW
+
+Indicated Power of the 2nd cylinder - IP2 = (X-X2) kW=
+
+
+Load on the engine when the ignition in the3rd  cylinder is cut off =W3 kgf.
+
+Brake Power developed =  W3*N /2717 KW = X3 KW
+
+Indicated Power of the 3rd cylinder - IP3 = (X-X3) kW=
+
+Load on the engine when the ignition in the4th cylinder is cut off =W4 kgf.
+
+Brake Power developed =  W4*N /2717 KW = X4 KW
+
+Indicated Power of the 4th cylinder - IP4 = (X-X4) kW=
+
+Indicated power of the Engine IP = IP1 + IP2 + IP3 + IP4 
+
+        IP = ______kW 
+ 
+
+η<sub>mechanical</sub> = Brake Power / Indicated Power = X/IP
+
+Frictional Power = Indicated Power - Brake Power.
+
+                  FP=  ______ kW
+                
+                </pre>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+
+    
+</body>
+</html>

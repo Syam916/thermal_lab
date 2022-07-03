@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}"> 
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+</head>
+<body>
+    <div class="nbkr">
+        <center><img src="{% static '/images/logo2.jpg' %}" alt="" width="700px" height="150"></center>
+    </div>
+    <div class="main">
+      
+        
+        <div class="icon">
+      
+            <div class="logo">
+                <h1>THERMAL ENGINEERING LABORATORY</h1>
+            </div>
+            <div>
+                <form action="compressor">
+                    <button class="comp"> 01. TWO STAGE AIR COMPRESSOR</button>
+                </form>
+            </div>
+            <div class="blow1">
+                <form action="blower">
+                    <button class="blow"> 02. BLOWER</button>
+                </form>
+            </div>
+        
+            <form action="morse1">
+                <button class="morse"> 03.MORSE TEST</button>
+            </form>
+            <form action="heatsheet">
+                <button class="heat"> 04.HEAT BALANCE SHEET</button>
+            </form>
+            <form action="bhp3">
+                <button class="bhp3"> 05. 3 BHP VILLIERS TEST</button>
+            </form>
+           
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

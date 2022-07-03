@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static '/styles/comexp.css' %}">
+    <title>Thermal</title>
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="head">
+            <h1>COMPRESSOR</h1>
+        </div>
+        <div class="menu">
+            <a href="index"><button class="b1">HOME</button></a>
+            <a href="heatsheet"><button class="b2">HEAT BALANCE</button></a>
+        </div>
+        <div class="exp">
+            <form action="heatresult" method="POST">
+                {% csrf_token %}
+                <pre>
+
+-->Enter the load in Kgf                       :   <input type="text" class="text" name="L" placeholder="enter" required><br>
+
+-->Enter the  manometric reading               :   <input type="text" class="text" name="X" placeholder="enter" required><br>
+
+--> Enter the  time taken for reading          :   <input type="text" class="text" name="T" placeholder="enter" required><br>
+
+--> Enter the time Inlet Water Temperature     :   <input type="text" class="text" name="T1" placeholder="enter" required><br>
+
+--> Enter the time Outlet  Water Temperature   :   <input type="text" class="text" name="T2" placeholder="enter" required><br>
+
+--> Enter the Quantity of Cooling Water        :   <input type="text" class="text" name="Q" placeholder="enter" required><br>
+
+--> Enter the Exhaust Gas Temperature          :   <input type="text" class="text" name="T3" placeholder="enter" required><br>
+
+--> Enter the Ambeint Air Temperature          :   <input type="text" class="text" name="T4" placeholder="enter" required><br>
+
+
+                </pre>
+
+                <a href="heatresult"><button class="b3">CLICK TO PROCEEED</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

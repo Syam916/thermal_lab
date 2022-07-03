@@ -1,0 +1,133 @@
+.nbkr{
+    background-color:white;
+    
+}
+.main{
+    width:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url( '/static/images/1.jpg' );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 96vh;
+}
+
+
+.logo{
+    color: orangered;
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial;
+    padding-top: 10px;
+}
+
+
+
+.comp{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.comp:hover{
+    background-color:whitesmoke;
+
+}
+.blow{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.blow:hover{
+    background-color: whitesmoke;
+}
+
+.morse{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.morse:hover{
+    background-color: whitesmoke;
+}
+.heat{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.heat:hover{
+    background-color: whitesmoke;
+}
+.bhp3{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.bhp3:hover{
+    background-color: whitesmoke;
+}
+.bhp5{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1800px;
+    height: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.bhp5:hover{
+    background-color: whitesmoke;
+}
+
+
+.nbkr2{
+    padding-left: 280px;
+    margin-top: -190px;
+}

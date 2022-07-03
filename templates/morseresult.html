@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            color: orangered;
+            font-size: 15px;
+            text-align: center;
+            font-family: Arial;
+            padding-top: 10px;
+        }
+        
+        
+        .main{
+            width:100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('/static/images/1.jpg'); 
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+        .se{
+            font-size: 35px;
+            color: white;
+            font-family: 'Times New Roman';
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .b1{
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            background: white;
+            color: orangered;
+            border: none;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .b2{
+            width: 180px;
+            height: 40px;
+            font-size: 15px;
+            background: white;
+            color: orangered;
+            border: none;
+            border-radius: 10px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+       
+        .b1:hover{
+            background-color:cyan;
+        
+        }
+        .b2:hover{
+            background-color: cyan;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>MORSE TEST</h1>
+        </div>
+        <div class="menu">
+            <a href="index"><button class="b1">HOME</button></a>
+            <a href="morseexp"><button class="b2">HEAT BALENCE TEST</button></a>
+            
+        </div>
+        <pre class="se">
+--->LOAD AT CYLINDER 1 IS : {{x11}} 
+
+--->LOAD AT CYLINDER 1 : {{x22}} 
+
+--->LOAD AT CYLINDER 1  : {{x33}} 
+
+--->LOAD AT CYLINDER 1  : {{x44}} 
+
+--->indicatd power of 1st cylinder IS :  {{L11}} KW
+
+--->indicatd power of 1st cylinder: {{L22}} KW
+
+--->indicatd power of 1st cylinder : {{L33}} KW
+
+--->indicatd power of 1st cylinder :{{L44}} 
+
+--->BRAKE POWER IS :{{BP1}} 
+
+--->INDICATED POWER IS :{{IP1}} 
+
+--->MECHANICAL EFFICIANCY :{{EF1}} %
+
+--->FRICTIONAL POWER :{{FP1}} 
+        </pre>
+
+    </div>
+</body>
+</html>
