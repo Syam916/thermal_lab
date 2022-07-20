@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-xssw0@esb&*j8+q2$e26u0eojz#*aqy&_@6fzm7j_ef0)$%f0)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CSRF_TRUSTED_ORIGINS = ['https://evening-garden-22351.herokuapp.com']
 
 ALLOWED_HOSTS = [ "*"]
 
@@ -44,8 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-SESSION_COOKIE_SECURE = True
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
