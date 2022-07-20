@@ -3,13 +3,8 @@
     
 }
 .main{
-    width:100%;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url( '/static/images/1.jpg' );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 96vh;
+    background:black;
+    
 }
 
 

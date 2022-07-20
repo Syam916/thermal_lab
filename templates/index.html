@@ -4,45 +4,155 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
-    <link rel="stylesheet" href="{% static '/styles/style.css' %}"> 
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
 </head>
-<body>
+<body class='b1'>
     <div class="nbkr">
-        <center><img src="{% static '/images/logo2.jpg' %}" alt="" width="700px" height="150"></center>
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
     </div>
-    <div class="main">
-      
-        
-        <div class="icon">
-      
-            <div class="logo">
-                <h1>THERMAL ENGINEERING LABORATORY</h1>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="http://nbkrist.co.in/index.php" target="-blank">NBKR COLLEGE</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--<section>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <div class="slide first">
+                    <img src="{% static '/images/com.jpg' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/com.jpg' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/com.jpg' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/com.jpg' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/com.jpg' %}" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                    <div class="a-b4"></div>
+                </div>
             </div>
-            <div>
-                <form action="compressor">
-                    <button class="comp"> 01. TWO STAGE AIR COMPRESSOR</button>
-                </form>
-            </div>
-            <div class="blow1">
-                <form action="blower">
-                    <button class="blow"> 02. BLOWER</button>
-                </form>
-            </div>
-        
-            <form action="morse1">
-                <button class="morse"> 03.MORSE TEST</button>
-            </form>
-            <form action="heatsheet">
-                <button class="heat"> 04.HEAT BALANCE SHEET</button>
-            </form>
-            <form action="bhp3">
-                <button class="bhp3"> 05. 3 BHP VILLIERS TEST</button>
-            </form>
-           
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+                <label for="radio5" class="m-btn"></label>
             </div>
         </div>
-    </div>
     
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if (counter >5){
+                counter = 1;
+            }
+        },5000);
+
+        </script>
+    </section>-->
+
+    <div class="front">
+        <center><h3>List of Experiments</h3></center>
+    </div>
+    <div class="pic2">
+        <a href="compressor" ><img class="im" src="{% static '/images/100.jpg' %}" alt="" ></a>
+        <center><p class="m5"> <a class= "m5"href="compressor" >PERFORMANCE TEST ON TWO STAGE AIR COMPRESSOR </a></p></center>
+        <P  class="t3">
+-->A compressor is a mechanical device that increases the pressure of a gas by reducing its volume.<br>
+-->Compressors are similar to pumps: both increase the pressure on a fluid and both can transport the fluid through a pipe.<br>
+-->As gases are compressible, the compressor also reduces the volume of a gas. <br>
+-->Liquids are relatively incompressible; while some can be compressed, the main action of a pump is to pressurize and transport liquids.
+        </p>
+    </div>
+    <div class="pics2">
+        <a href="blower" ><img class="im" src="{% static '/images/101.jpg' %}" alt="" ></a>
+        <center><p class="m5"> <a class= "m5"href="blower" >PERFORMANCE TEST ON AIR BLOWER </a></p></center>
+        <P  class="t3">
+        -->Blowers are equipment or devices which increase the velocity of air or gas when passed through equipped impellers. They are mainly used for flow of air/gas required for exhausting, aspirating, cooling, ventilating, conveying etc.<br>
+        -->Air blower machine is a simple and effective electrical device used in homes and industries to blow away dust from every nook and corner. For gadgets and electronics have delicate parts that cannot be cleaned with a cloth. This is when you need air blowers to remove dust with its continuous air pressure.<br>
+        -->Blowers are very efficient. Operating cost of a blower is a fraction of the cost of using compressed air for a given volume of air. Blowers also provide clean air there is no danger of oil droplets or residue in the blower air stream since blowers do not use oil as a lubricant.
+   
+        </p>
+    </div>
+    <div class="pics2">
+        <a href="heat" ><img class="im" src="{% static '/images/102.jpg' %}" alt="" ></a>
+        <center><p class="m5"> <a class= "m5"href="heat" >HEAT BALANCE TEST ON WATER COOLED DIESEL ENGINE </a></p></center>
+        <P  class="t3">
+        -->the distribution of the heat energy supplied to a thermomechanical system (as a steam power plant) among the various drains upon it including both useful output and losses also : an evaluation or record of such distribution.<br>
+        -->The performance of an engine is generally given by heat balance sheet. To draw the heat balance sheet for I.C. Engine, it is run at constant load. The quantity of fuel used in a given time and its calorific value, the amount, inlet and outlet temperature of cooling water, the temperature of exhaust gases, etc.<br>
+        -->Heat balance sheet is used to get necessary information regarding the performance of IC Engine. Heat balance sheet can be done on second basis or minute basis or hour basis. Since heat balance sheet is account of heat supplied and heat utilized by engine.<br>
+    
+        </p>
+    </div>
+    <div class="pics2">
+        <a href="bhp3" ><img class="im" src="{% static '/images/104.jpg' %}" alt="" ></a>
+        <center><p class="m5"> <a class= "m5"href="bhp3" >LOAD TEST VILLIERS AIR COOLED PETROL ENGINE</a></p></center>
+        <P  class="t3">heofheoifowehfoweihfwefheofnwefenfeofhpefheo</p>
+    </div>
+    <div class="pics2">
+        <a href="morse1" ><img class="im" src="{% static '/images/103.jpg' %}" alt="" ></a>
+        <center><p class="m5"> <a class= "m5"href="morse1" >MORSE TEST ON PETROL ENGINE</a></p></center>
+        <P  class="t3">
+        -->Morse test is a method to measure the frictional power of a multicylinder SI engine. Morse Test – This test carried out on multi cylinder I.C. engine. In this test, first engine is allowed to run at constant speed and brake power of engine is measured when all cylinders are working and developing indicated power.<br>
+        -->frictional power is depends onthe speed and not upon the load on the engine .<br>
+        -->This test measures the indicated power by cutting out the spark plug of the cylinder by keeping the speed of the engine constant.
+   
+        </p>
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
+    </div>
+
+
 </body>
 </html>

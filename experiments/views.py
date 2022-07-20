@@ -5,11 +5,20 @@ from experiments.models import  Compressor,Blower,Heatbalence,Bhpvilliers,Morse
 
 # Create your views here.
 def home(request):
+    return render(request,'home.html')
+
+
+def index(request):
     return render(request,'index.html')
 
 
+def contact(request):
+    return render(request,'contact.html')
+
+
+
 def compressor(request):
-    return render(request,'compressor.html')
+    return render(request,'compressor1.html')
 
 def index(request):
     return render(request,'index.html')
@@ -42,8 +51,10 @@ def result(request):
     T=30
     p1=1.033
     p3 = p22+p1
+    p3=round(p3,2)
                 # PR is the pressure ratio
     PR= p3/p1
+    PR=round(PR,2)
                 # theorytical disacharge is Q
     Q = 0.0094333
                 # A be the area of orifice 
@@ -52,32 +63,46 @@ def result(request):
     R = (1.033*10**4)/(29.27*(273+T))
                 # h be the head of air column causing air flow
     h = (x1/100)*(1000/R)
+    h=round(h,2)
                 # let y be the air flow through orifice 
     cd = 0.6
     k = 2*9.81*h
     y = cd*A*(k**0.5)
                 # v b ethe volumetric efficiancy
     v = (y/Q)
+    v=round(v,2)
 
                 # PI be the power inut to the compressor
     n=5
     PI=((n/200)*3600*0.85*(1/t1))
+    PI=round(PI,2)
                 # IP be the isothermal power
     IP =101.325*y*math.log(PR)
+    IP=round(IP,2)
                 # IE be the isothermal efficiancy
     IE = IP/PI
+    IE=round(IE,2)
                 # AP  BE THE ADIABATIC POWER
                 # r be the gamma 
     AP=(((2*1.4)/(1.4-1))*101.325*y*(math.pow(PR,((1.4-1)/(2*1.4)))-1))
+    AP=round(AP,2)
                 # AE be the adiabatic efficiancy
     AE = AP/PI
+    AE=round(AE,2)
 
                 # E be the efficiancy ratio 
     E = AE/IE
     v2=v*100
     IE1=IE*100
     AE1=AE*100
+    AE1=round(AE1,2)
+    IE1=round(IE1,2)
+    E=round(E,2)
+    v2=round(v2,2)
     context={
+        'p22':p22,
+        'x1':x1,
+        't1':t1,
         'p4':p3,
         'PR1':PR,
         'h1':h,
@@ -100,7 +125,7 @@ def result(request):
     return render (request,'compresult.html',context)
 
 def heat(request):
-    return render(request,'heat.html')
+    return render(request,'heat1.html')
 
 def bhp3(request):
     return render(request,'bhp3.html')
@@ -158,7 +183,25 @@ def heatresult(request):
     X4 = HES-HEBP-ECW-EEG
     # % OF HEAT UNACCOUNTED
     X14 = (X4/HES)*100
+    BP=round(BP,2)
+    HES=round(HES,2)
+    HEBP=round(HEBP,2)
+    ECW=round(ECW,2)
+    EEG=round(EEG,2)
+    X4=round(X4,2)
+    X11=round(X11,2)
+    X2=round(X2,2)
+    X3=round(X3,2)
+    X14=round(X14,2)
     context={
+        'L1':L1,
+        'X1':X1,
+        'T11':T11,
+        'T111':T111,
+        'T22':T22,
+        'Q1':Q1,
+        'T33':T33,
+        'T44':T44,
         'BP1':BP,
         'HES1':HES,
         'HEBP1':HEBP,
@@ -223,6 +266,15 @@ def bhp3result(request):
     CV = 44380
     EBT = (BP*60)/(fc1*CV)
     EBT=EBT*100
+    W=round(W,2)
+    BP=round(BP,2)
+    FC=round(FC,2)
+    SFC=round(SFC,2)
+    VE=round(VE,2)
+    BMEP=round(BMEP,2)
+    AFR=round(AFR,2)
+    BT=round(BT,5)
+    EBT=round(EBT,2)
     context={
         'W1':W,
         'BP1':BP,
@@ -232,17 +284,21 @@ def bhp3result(request):
         'BMEP1':BMEP,
         'AFR1':AFR,
         'BT1':BT,
-        'EBT1':EBT
+        'EBT1':EBT,
+        'L1':L1,
+        'X1':X1,
+        'T1':T1
+
     }
-    ins=Bhpvilliers(L1=L1,X1=X1,T1=T1)
-    ins.save()
+    '''ins=Bhpvilliers(Load=L1,Manometric_reading=X1,Time=T1,Brake_power=BP,Volumetric_efficiancy=VE,Fuel_consumption=FC,Brake_torque=BT,Thermal_efficianc=EBT)
+    ins.save()'''
 
     return render(request,'bhp3result.html',context)
 
 
 
 def blower(request):
-    return render (request,'blower.html')
+    return render (request,'blower1.html')
 
 def blowresult(request):
     s1=float(request.POST['s'])
@@ -279,16 +335,32 @@ def blowresult(request):
     Air_power=((density*discharge*Total_head)/75)*0.736
     #Efficiency
     Effi=(Air_power/Ip)*100
+
+    Effi=round(Effi,2)
+    Air_power=round(Air_power,2)
+    Ip=round(Ip,2)
+    velo=round(velo,2)
+    discharge=round(discharge,2)
+    Total_head=round(Total_head,2)
+    dynHead=round(dynHead,2)
+    H1=round(H1,2)
+    H2=round(H2,2)
+
+
     context= {
+        's1':s1,
+        'd1':d1,
+        'T1':T1,
+        't81':t81,
         'E1':Effi,
         'A1':Air_power,
-        'IP1': Ip,
+        'IP1':Ip,
         'V':velo,
         'D':discharge,
         'TH':Total_head,
         'D1':dynHead,
-        'H22':H2,
-        'H11':H1
+        'H2':H2,
+        'H1':H1
         
         
         

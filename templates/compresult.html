@@ -2,104 +2,93 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .head{
-            color: orangered;
-            font-size: 15px;
-            text-align: center;
-            font-family: Arial;
-            padding-top: 10px;
-        }
-        
-        
-        .main{
-            width:100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('/static/images/1.jpg'); 
-            background-position: center;
-            background-size: cover;
-            height: 109vh;
-        }
-        .se{
-            font-size: 35px;
-            color: white;
-            font-family: 'Times New Roman';
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        .b1{
-            width: 100px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        .b2{
-            width: 180px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            display: inline-block;
-            margin-left: 20px;
-        }
-       
-        .b1:hover{
-            background-color:cyan;
-        
-        }
-        .b2:hover{
-            background-color: cyan;
-        }
-       
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
     </style>
 </head>
-<body>
-    <div class="main">
-        <div class="head">
-            <h1>COMPRESSOR</h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="compressor"><button class="b2">COMPRESSOR</button></a>
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="compressor">Theory</a></li>
+                <li><a class="x" href="compexp">Practical Experiment</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic4">
+        <center><p class="m1"> <a class= "m1"href="compressor" >PERFORMANCE TEST ON TWO STAGE AIR COMPRESSOR </a></p></center>
+    <table>
+        <tr>
+          <th>Sl no</th>
+          <th>Delivery Pressur (guage)</th>
+          <th>Delivery Pressur (Absolute)</th>
+          <th>Pressure Ratio</th>
+          <th>Time Taken By Energy Meter</th>
+          <th>Pressure Head cm</th>
+          <th>Pressure Head m</th>
+          <th>volumetric efficiancy</th>
+          <th>Power Input KW</th>
+          <th>Isothermal Power KW</th>
+          <th>Adiabatic Power KW</th>
+          <th>Isotehrmal efficiancy</th>
+          <th>Adiabatic efficiancy</th>
+          <th>Efficiancy Ratio</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>{{p22}}</td>
+            <td>{{p4}}</td>
+            <td>{{PR1}}</td>
+            <td>{{t1}}</td>
+            <td>{{x1}}</td>
+            <td>{{h1}}</td>
+            <td>{{v3}}</td>
+            <td>{{PI1}}</td>
+            <td>{{IP1}}</td>
+            <td>{{AP1}}</td>
+            <td>{{IE2}}</td>
+            <td>{{AE2}}</td>
+            <td>{{E1}}</td>
+        </tr>
+    </table>
+
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
             
-        </div>
-        <pre class="se">
---->Delivary pressure is : {{p4}} 
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
 
---->Presuure ratio is : {{PR1}} 
-
---->pressure head is : {{h1}} m
-
---->volumetric efficiancy is : {{v3}} %
-
---->power input is :  {{PI1}} KW
-
---->isothermal power is : {{IP1}} KW
-
---->adiabatic poweer is : {{AP1}} KW
-
---->Isothermal efficiancy is :{{IE2}} %
-
---->adiabatic efficiancy is :{{AE2}} %
-
---->efficiancy ratio is :{{E1}} %
-        </pre>
-
+            
+        </footer>
     </div>
 </body>
 </html>

@@ -2,41 +2,63 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
-    <link rel="stylesheet" href=" {% static '/styles/morse.css' %}"> 
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
 </head>
-<body>
+<body class='b1'>
     <div class="nbkr">
-        <center><img src="{% static '/images/logo2.jpg' %}" alt="" width="700px" height="150"></center>
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
     </div>
-    <div class="main">
-        <div class="logo">
-            <h1> MORSE TEST ON 13 BHP AMBASSADOR PETROL ENGINE </h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="morseexp"><button class="b2">EXPERIMENT</button></a>
-        </div>
-          <div class="form">
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="">Practical Experiment</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic3">
+        <center><p class="m1">MORSE TEST ON PETROL ENGINE</p></center>
+        <img class="imc" src="{% static '/images/103.jpg' %}" alt="" >
+        <P  class="t1">
             <pre>
 <h2 class="h2"><u>AIM</u>:</h2>
 
-To conduct Morse Test
+<h3 class="t2">To conduct Morse Test</h3>
 
 <h2 class="h2"><u>APPARATUS</u>:</h2>
 
-13BHP (9.568 kW)  Ambassador Petrol Engine, 
+<h3 class="t2">13BHP (9.568 kW)  Ambassador Petrol Engine, 
 Tachometer, 
-Stop watch etc.,
+Stop watch etc.,</h3>
 
 <h2 class="h2"><u>TECHNICAL DETAILS</u>:</h2>
 
-Number of cylinders = 4;      
+<h3 class="t2">Number of cylinders = 4;      
 Firing order = 1-3-4-2;    
  Method of cooling = Water cooling;
 Speed =1500rpm;  
@@ -49,11 +71,12 @@ Loading = Hydraulic type.
 Dynamometer Constant  =  WN / 2000 = BHP.    
     Where, W in kgf.
   or WN / 2717 = Brake Power  .  
-    Where, W kgf (reading obtained on the scale)
+    Where, W kgf (reading obtained on the scale)</h3>
 
 <h2 class="h2"><u>DESCRIPTION</u>:</h2>
+            </pre>
 
-The engine is a 4-stroke, 13 BHP water cooled vertical, four cylinders Ambassador Petrol Engine. 
+<h3 class="t2">The engine is a 4-stroke, 13 BHP water cooled vertical, four cylinders Ambassador Petrol Engine. 
 The cylinders are arranged in-line. The engine is provided with a hydraulic dynamometer. 
 The loading on the shaft takes place by allowing more water into the casing. Fuel is 
 supplied from fuel tank through a three way valve. For obtaining fuel consumption, 
@@ -64,11 +87,11 @@ Two dial gauges are provided on the panel to measure cooling water outlet temper
 the exhaust gas temperature near the engine. Four DPST switches are provided on the panel 
 which are used to cut off ignition in any cylinder while conducting the Morse test. 
 Ignition in any cylinder is indicated by the glowing of bulb which is connected to the 
-LT side or from battery. Water supply is provided through a control valve for the cylinders.
+LT side or from battery. Water supply is provided through a control valve for the cylinders.</h3>
 
 <h2 class="h2"><u>PROCEDURE</u>:</h2>
 
-Lubricating oil level, fuel level and water supply are checked. The engine is started with the help 
+<h3 class="t2">Lubricating oil level, fuel level and water supply are checked. The engine is started with the help 
 of ignition switch. Then the water supply for cooling of the engine is given. The speed is adjusted to 
 1500 rpm using throttle. Some time is allowed for the engine to warm up and stabilize. For loading the 
 engine the handle of the hydraulic dynamometer is rotated in the direction given on the handle as 'To open' 
@@ -83,11 +106,11 @@ This load is noted down as W1 kgf. After noting down the load the ignition for c
 closing DPST switch for cylinder-1. Then the DPST switch for cyclider-2 is opened so that the ignition is 
 cutoff. Once again the load is adjusted so as to run the engine at the rated speed 1500 rpm. Let the load 
 be W2 kgf. Same procedure is repeated for cylinders 3 & 4. Respective loads W3 kgf. and W4 kgf. are noted 
-down. Same experiment may be conducted for different throttle positions.  
-
+down. Same experiment may be conducted for different throttle positions. </h3> 
+<pre>
 <h2 class="h2"><u>CALCULATIONS</u>:</h2>
 
-Maximum load calculation: 
+<h3 class="t2">Maximum load calculation: 
 
 	Brake Power = WN / 2717  = 9.568 kW
 
@@ -132,12 +155,21 @@ Indicated power of the Engine IP = IP1 + IP2 + IP3 + IP4
 
 Frictional Power = Indicated Power - Brake Power.
 
-                  FP=  ______ kW
+                  FP=  ______ kW</h3>
                 
                 </pre>
             </div>
         </div>
-        
+        <div class="foot">
+            <footer>
+                <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+                
+                <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+                <p class="p1">Devoloped by Mechaical Engineering Students</p>
+    
+                
+            </footer>
+        </div>
         
 
 

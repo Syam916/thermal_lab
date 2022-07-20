@@ -2,50 +2,92 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static '/styles/comexp.css' %}">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
 </head>
-<body>
-    
-    <div class="main">
-        <div class="head">
-            <h1>COMPRESSOR</h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="heatsheet"><button class="b2">HEAT BALANCE</button></a>
-        </div>
-        <div class="exp">
-            <form action="heatresult" method="POST">
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="heat">Theory</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic5">
+        <center><p class="m1"> <a class= "m1"  >HEAT BALANCE TEST ON WATER COOLED DIESEL ENGINE </a></p></center>
+        <div class="fon">
+            <form class="fon" action="heatresult" method="POST">
                 {% csrf_token %}
-                <pre>
+                <label>--> Enter the load in Kgf :</label>
+                <input type="text" name="L" placeholder="Enter" required><br>
+                
+                <label>--> Enter the  manometric reading  :</label>
+                <input type="text" name="X" placeholder="Enter " required><br>
+                
+                <label>-->Enter the  time taken for reading  :</label>
+                <input type="text" name="T" placeholder="Enter" required><br>
 
--->Enter the load in Kgf                       :   <input type="text" class="text" name="L" placeholder="enter" required><br>
+                <label>-->Enter the time Inlet Water Temperature :</label>
+                <input type="text" name="T1" placeholder="Enter" required><br>
 
--->Enter the  manometric reading               :   <input type="text" class="text" name="X" placeholder="enter" required><br>
-
---> Enter the  time taken for reading          :   <input type="text" class="text" name="T" placeholder="enter" required><br>
-
---> Enter the time Inlet Water Temperature     :   <input type="text" class="text" name="T1" placeholder="enter" required><br>
-
---> Enter the time Outlet  Water Temperature   :   <input type="text" class="text" name="T2" placeholder="enter" required><br>
-
---> Enter the Quantity of Cooling Water        :   <input type="text" class="text" name="Q" placeholder="enter" required><br>
-
---> Enter the Exhaust Gas Temperature          :   <input type="text" class="text" name="T3" placeholder="enter" required><br>
-
---> Enter the Ambeint Air Temperature          :   <input type="text" class="text" name="T4" placeholder="enter" required><br>
-
-
-                </pre>
-
-                <a href="heatresult"><button class="b3">CLICK TO PROCEEED</button></a>
+                <label>-->Enter the time Outlet  Water Temperature :</label>
+                <input type="text" name="T2" placeholder="Enter" required><br>
+                
+                <label>--> Enter the Quantity of Cooling Water  :</label>
+                <input type="text" name="Q" placeholder="Enter" required><br>
+                
+                <label>--> Enter the Exhaust Gas Temperature  :</label>
+                <input type="text" name="T3" placeholder="Enter" required><br>
+                
+                <label>--> Enter the Ambeint Air Temperature  :</label>
+                <input type="text" name="T4" placeholder="Enter" required><br>
+                
+                
+                
+                <center>
+                    <a href="result"><button class="sub">CLICK TO PROCEEED</button></a>
+                </center>
             </form>
         </div>
     </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
+    </div>
 </body>
 </html>
+

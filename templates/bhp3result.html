@@ -2,85 +2,94 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .head{
-            color: orangered;
-            font-size: 15px;
-            text-align: center;
-            font-family: Arial;
-            padding-top: 10px;
-        }
-        
-        
-        .main{
-            width:100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('/static/images/1.jpg'); 
-            background-position: center;
-            background-size: cover;
-            height: 109vh;
-        }
-        .se{
-            font-size: 35px;
-            color: white;
-            font-family: 'Times New Roman';
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        .b1{
-            width: 100px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        .b2{
-            width: 180px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            display: inline-block;
-            margin-left: 20px;
-        }
-       
-        .b1:hover{
-            background-color:cyan;
-        
-        }
-        .b2:hover{
-            background-color: cyan;
-        }
-       
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
     </style>
 </head>
-<body>
-    <div class="main">
-        <div class="head">
-            <h1>LOAD TEST  ON 3 BHP PETROL / KEROSENE ENGINE 
-                (VILLIAR'S ENGINE)
-                </h1>           
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="bhp3"><button class="b2">3 BHP TEST</button></a>
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="https://en.wikipedia.org/wiki/Compressor" target="-blank">About Compressor</a></li>
+                <li><a class="x" href="compexp">Practical Experiment</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic4">
+        <center><p class="m1"> <a class= "m1"href="compressor" >PERFORMANCE TEST ON TWO STAGE AIR COMPRESSOR </a></p></center>
+    <table>
+        <tr>
+          <th>Sl no</th>
+          <th>Load kgf </th>
+          <th>Load N</th>
+          <th>Manometric reading in cm</th>
+          <th>Time Taken for 20 cc of fuel consumption</th>
+          <th>Brake Power KW</th>
+          <th>Fuel Consumption (kg/hr )</th>
+          <th>Specific Fuel Consumption (kg/ kw hr)</th>
+          <th>Volumetric Efficiency</th>
+          <th>Brake Mean Effective Power (KN/m<sup>2</sup>)</th>
+          <th>Air Fuel Ratio </th>
+          <th>Brake Torque(M KN)</th>
+          <th>Brake Thermal efficiancy</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>{{L1}}</td>
+            <td>{{W1}}</td>
+            <td>{{X1}}</td>
+            <td>{{T1}}</td>
+            <td>{{BP1}}</td>
+            <td>{{FC1}}</td>
+            <td>{{SFC1}}</td>
+            <td>{{VE1}}</td>
+            <td>{{BMEP1}}</td>
+            <td>{{AFR1}}</td>
+            <td>{{BT1}}</td>
+            <td>{{EBT1}}</td>
+        </tr>
+    </table>
+
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
             
-        </div>
-        <pre class="se">
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
+    </div>
+</body>
+</html>
 --->LOAD IN NEWTON IS : {{W1}} 
 
 --->BREAK POWER IS : {{BP1}} 
@@ -98,8 +107,3 @@
 --->BRAEK TORQUE :{{BT1}} %
 
 --->BRAEK THERMAL EFIICIANCY :{{EBT1}} %
-        </pre>
-
-    </div>
-</body>
-</html>

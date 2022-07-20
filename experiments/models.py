@@ -33,9 +33,15 @@ class Heatbalence(models.Model):
     T44=models.CharField(max_length=10)
     
 class Bhpvilliers(models.Model):
-    L1=models.CharField(max_length=10)
-    X1=models.CharField(max_length=10)
-    T1=models.CharField(max_length=10)
+    Load=models.CharField(max_length=10)
+    Manomertric_reading=models.CharField(max_length=10)
+    Time=models.CharField(max_length=10)
+'''Brake_power=models.CharField(max_length=10)
+    fuel_consumption=models.CharField(max_length=10)
+    Volumetric_efficiancy=models.CharField(max_length=10)
+    Brake_torque=models.CharField(max_length=10)
+    Thermal_efficiancy=models.CharField(max_length=10)'''
+    
     
     
     

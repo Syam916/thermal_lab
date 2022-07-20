@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
+    <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
+</head>
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="https://en.wikipedia.org/wiki/Compressor" target="-blank">About Compressor</a></li>
+                <li><a class="x" href="compexp">Practical Experiment</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+<div class="pic3">
+    <center><p class="m1"> <a class= "m1"href="compressor" >PERFORMANCE TEST ON TWO STAGE AIR COMPRESSOR </a></p></center>
+    <img class="imc" src="{% static '/images/100.jpg' %}" alt="" >
+        
+    <P  class="t1">
+        <pre>
+<h2 class="h2"><u>AIM</u>:</h2>
+<h3 class="t2">To conduct load test on air compressor and to plot performance curves of 
+(1) Volumetric efficiency 
+(2) Isothermal efficiency 	
+(3) Adiabatic efficiency 	
+(4) Input  power
+(5) Efficiency ratio against Pressure Ratio.</h3>
+
+<h2 class="h2"><u>APPARATUS</u>:</h2>
+
+<h3 class="t2">Compressor, Stop watch etc.</h3>
+
+<h2 class="h2"><u>COMPRESSOR</u>:</h2>
+
+<h3 class="t2">Model KHOSLA AE 20
+Number of Stages : 2
+Piston Displacement = 566 lit/min.
+Tank capacity = 250 lit</h3>
+                
+<h2 class="h2"><u>ORIFICE</u>:</h2>
+<h3 class="t2">Diameter = 24 mm 
+Co-efficient of discharge = 0.6</h3>
+                
+<h2 class="h2"><u>ENERGY METER</u>:</h2>
+<h3 class="t2">Energy meter constant 150 revolutions = 1 KWh</h3>
+</pre>
+                
+<h2 class="h2"><u>THEORY</u>:</h2>
+<h3 class="t2">A machine which provides the gas at high pressure is called a compressor and work must be done upon the gas by external agency (prime mover). An air compressor takes air from atmosphere, compresses it and delivers the high pressure air to a storage vessel from which it may be conveyed by a pipe line to wherever the supply of air is required. 
+    The high pressure air is having various chemical and industrial applications. It is used for operating the small pneumatic hand tools, such as riveters, drills, paint spraying, mining, tunneling operations etc., 
+    Compression of gas in one stage suffers from many disadvantages like handling of very high pressures in one cylinder resulting leakage past the piston and ineffective cooling of the gas and also requires robust construction of the cylinder to withstand the delivery pressure. So multistage compression is very efficient. This multistage compression is universally adopted. The main advantages of multi stage air compression are reduction of driving power required, improved volumetric efficiency, high delivering pressure with less power, better mechanical balance and improved cooling during compression.
+    The two stage air compressor consists of low pressure (L.P.) and high pressure cylinders (H.P.). The air compressed in the low pressure cylinder to an intermediate pressure which is between the intake and delivery pressure. The compressed air at higher temperature from the L.P. cylinder passes into an intercooler which is a heat exchanger. In the intercooler, the air gets an opportunity to cool down to the initial temperature by properly regulating supply of cooling water in the intercooler. The higher pressure cylinder is supplied from the intercooler and in the higher pressure (H.P.) cylinder; the air is compressed to the final delivery pressure and passed on to the storage pressure vessel or air receiver to be used when required.
+</h3>          
+<h2 class="h2"><u>PROCEDURE</u>:</h2>
+<h3 class="t2">The pressure inside the air tank is first made atmospheric. This is done by opening 
+the outlet valve of the air tank and letting the air to atmosphere. The readings 
+that are obtained give the values above atmospheric and hence to be added with 
+1.033 kgf/cm2.
+Start the motor. Adjust the pressure to a particular value. Note the time taken
+for five revolutions of the energy meter. Then calculate the input to the compressor
+assuming a motor efficiency of 85%. Note the manometer reading and find the actual
+quantity of air drawn into the compressor. The experiment in repeated for different pressures.</h3>
+<table>
+    <tr>
+      <th>Sl no</th>
+      <th>Delivery Pressur (guage)</th>
+      <th>Delivery Pressur (Absolute)</th>
+      <th>Pressure Ratio</th>
+      <th>Time Taken By Energy Meter</th>
+      <th>Pressure Head cm</th>
+      <th>Pressure Head m</th>
+      <th>volumetric efficiancy</th>
+      <th>Power Input KW</th>
+      <th>Isothermal Power KW</th>
+      <th>Adiabatic Power KW</th>
+      <th>Isotehrmal efficiancy</th>
+      <th>Adiabatic efficiancy</th>
+      <th>Efficiancy Ratio</th>
+    </tr>
+</table>
+<pre>
+             
+<h2 class="h2"><u>CALCULATIONS</u>:</h2>               
+<h3 class="t2">
+--->Theoretical air dishcharge = 566 lit/min=(566×10^3)/(10^6×60)  m^3/sec 
+                
+--->Area of the orifice=π/4×〖2.4〗^2/10^4   = A in m^2
+                
+--->Density of air at room temperature :
+  ρ=(1.033×10^6)/(29.27×(273+room temperature))  Kg/m<sup>3</sup>
+--->Let  x be the manometer reading in cm of water
+Head of air column causing air flow: 
+                
+h=X/100×(Density of water)/(Density of air)=(X×10)/(Density of air)   m of air
+                
+--->Air flow through the orifice= CdA√2gh
+                
+Where 
+Cd=0.6 & g = 9.81                
+                
+-->Volumetric efficiency:
+                
+    𝞰v=(Actual air drawn)/(Theoritical discharge)=  Y/0.0092332   at RTP
+                
+--->Power input to the compressor =n/200×3600×ηmec×l/t   KW  
+                
+    Where
+    n = number of revolutions
+    𝞰mec = Motor efficiency = 0.85
+    t = time taken for n number of revolutions
+    150 = energy meter constant
+                
+--->Pressure ratio = p3/p1=p3/1.033
+                
+--->Isothermal power = P1V1 log<sub>e</sub><sup>(p3/p1) </sup>  Kw
+                
+--->Isothermal efficiency=𝞰iso=(Isothermal power )/(power input)  %
+                
+--->Adiabatic power =2γ/(γ-1)×P1V1×{(〖pressure ratio)〗^((γ-1)/2γ)-1} ×0.736/75 kw
+                
+--->Adiabatic efficiency = (Adiabatic power)/(Power input)%
+                
+--->𝞰ratio= (Adiabatic efficiency)/(isothermal efficiency)</h3>
+</pre>
+                
+    <h2 class="h2"><u>RESULT</u>:</h2>
+</div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
+    </div>
+</body>
+</html>

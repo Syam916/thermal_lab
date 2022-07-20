@@ -2,83 +2,105 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .head{
-            color: orangered;
-            font-size: 15px;
-            text-align: center;
-            font-family: Arial;
-            padding-top: 10px;
-        }
-        
-        
-        .main{
-            width:100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('/static/images/1.jpg'); 
-            background-position: center;
-            background-size: cover;
-            height: 109vh;
-        }
-        .se{
-            font-size: 35px;
-            color: white;
-            font-family: 'Times New Roman';
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        .b1{
-            width: 100px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        .b2{
-            width: 180px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            display: inline-block;
-            margin-left: 20px;
-        }
-       
-        .b1:hover{
-            background-color:cyan;
-        
-        }
-        .b2:hover{
-            background-color: cyan;
-        }
-       
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
     </style>
 </head>
-<body>
-    <div class="main">
-        <div class="head">
-            <h1>COMPRESSOR</h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="heatexp"><button class="b2">HEAT BALENCE TEST</button></a>
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="heat">Theory</a></li>
+                <li><a class="x" href="heatexp">Practical Experiment</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic4">
+        <center><p class="m1"> <a class= "m1">HEAT BALANCE TEST ON WATER COOLED DIESEL ENGINE </a></p></center>
+    <table>
+        <tr>
+          <th>Sl no</th>
+          <th>Load in kg</th>
+          <th>Mano-metric Head in cm</th>
+          <th>time for 20 cc fuel</th>
+          <th>inlet water temp</th>
+          <th>outlet water temp</th>
+          <th>quantity of cooling water</th>
+          <th>exhaust gas temper-ature</th>
+          <th>brake Power KW</th>
+          <th>heat energy supplied</th>
+          <th>heat energy to brake power</th>
+          <th>heat energy to cooling water</th>
+          <th>heat energy to exhaust gas</th>
+          <th>heat unacco-unted </th>
+          <th>% heat energy to brake</th>
+          <th>% heat energy to cooling water</th>
+          <th>% heat energy to exhaust gas</th>
+          <th>% heat energy unacc-ounted</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>{{L1}}</td>
+            <td>{{X1}}</td>
+            <td>{{T11}}</td>
+            <td>{{T111}}</td>
+            <td>{{T22}}</td>
+            <td>{{Q1}}</td>
+            <td>{{T33}}</td>
+            <td>{{BP1}}</td>
+            <td>{{HES1}}</td>
+            <td>{{HEBP1}}</td>
+            <td>{{ECW1}}</td>
+            <td>{{EEG1}}</td>
+            <td>{{X44}}</td>
+            <td>{{X111}}</td>
+            <td>{{X22}}</td>
+            <td>{{X33}}</td>
+            <td>{{X141}}</td>
             
-        </div>
-        <pre class="se">
+        </tr>
+    </table>
+
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
+    </div>
+</body>
+</html>
 --->BRAKE POWER IS : {{BP1}} 
 
 --->ENERGY SUPPLIED : {{HES1}} 
@@ -98,8 +120,3 @@
 --->% ENERGY TO EXHAUST GAS:{{X33}} %
 
 --->% ENERGY UNACCOUNTED :{{X141}} %
-        </pre>
-
-    </div>
-</body>
-</html>

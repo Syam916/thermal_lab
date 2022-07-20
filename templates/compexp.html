@@ -1,48 +1,76 @@
-
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static '/styles/comexp.css' %}">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
+    </style>
 </head>
-<body>
-    
-    <div class="main">
-        <div class="head">
-            <h1>COMPRESSOR</h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="compressor"><button class="b2">COMPRESSOR</button></a>
-        </div>
-        <div class="exp">
-            <pre>
--->Enter how many readings          :   <input type="text" class="text" name="dat" placeholder="enter" required><br>
-            </pre>
+<body class='b1'>
+    <div class="nbkr">
+        <img src="{% static '/images/logo2.jpg' %}" alt="" width="500px" height="100">
+        <img src="{% static '/images/a.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/b.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/c.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/d.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/e.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/f.jpg' %}" alt="" width="120px" height="100">
+        <img src="{% static '/images/g.jpg' %}" alt="" width="120px" height="100">
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
 
-            {% for i in data2 %}
-            <form action="result" method="POST">
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="https://en.wikipedia.org/wiki/Compressor" target="-blank">About Compressor</a></li>
+                <li><a class="x" href="compressor">Theory</a></li>
+                <li><a class="x" href="contact">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic4">
+        <center><p class="m1"> <a class= "m1"href="compressor" >PERFORMANCE TEST ON TWO STAGE AIR COMPRESSOR </a></p></center>
+        <div class="fon">
+            <form class="fon"action="result" method="POST">
                 {% csrf_token %}
+                <label>-->Enter the delivery Pressure :</label>
+                <input type="text" name="p2" placeholder="Enter" required><br>
                 
-                <pre>
-     
--->Enter the  delivary pressure   {{i}}          :   <input type="text" class="text" name="p2" placeholder="enter" required><br>
-
---> Enter the  manometric reading  {{i}}         :   <input type="text" class="text" name="X" placeholder="enter" required><br>
-
---> Enter the time taken for reading  {{i}}      :   <input type="text" class="text" name="t" placeholder="enter" required><br>
-
-                </pre>                
+                <label>--> Enter the Pressure Head :</label>
+                <input type="text" name="X" placeholder="Enter " required><br>
+                
+                <label>--> Enter the Time taken :</label>
+                <input type="text" name="t" placeholder="Enter" required><br>
+                
+                <center>
+                    <a href="result"><button class="sub">CLICK TO PROCEEED</button></a>
+                </center>
             </form>
-            {% endfor %}
-            <a href="result"><button class="b3">CLICK TO PROCEEED</button></a>
-           
         </div>
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
+
+            
+        </footer>
     </div>
 </body>
 </html>
