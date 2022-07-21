@@ -144,7 +144,7 @@ li a.active {
 }
 .pic8{
     width: auto;
-    height: 950px;
+    height: 850px;
     background:#ADD8E6;
     border: 3px solid rgb(3, 43, 95);
     border-radius: 15px;
@@ -155,11 +155,11 @@ li a.active {
 }
 .pic9{
     width: 300px;
-    height: 350px;
+    height: 300px;
     background:#e1e5e7;
     border: 1px solid rgb(9, 15, 128);
     border-radius: 15px;
-    margin-left: 30px;
+    margin-left: 40%;
     margin-top: 40px;
     border-radius: 15px;
 }
@@ -249,8 +249,16 @@ li a.active {
     height: 200px;
     border-radius: 50%;
 }
+.i2{
+    margin-top: 0;
+    margin-left: 10PX;
+    width: 200px;
+    height: 200px;
+    border-radius:20px;
+}
 .copic{
-    font-size: 25px;
+    font-size: 15px;
+    font-family: 'Lobster Two', cursive;
 
 }
 .imc{
@@ -410,10 +418,16 @@ th{
 
 
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 600px) {
     /* For mobile phones: */
-    .mech .front .about .nav1 .b1{
-      width: 100%;
+    .b1 .nbkr .mech .nav1 .menu .front .about .q .h .pics .im .m .t .pic1 .foot .im1 .p1{
+      margin: 0;
+      width: 600px;
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+
     }
   }
+
     

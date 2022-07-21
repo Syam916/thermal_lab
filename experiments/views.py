@@ -116,8 +116,8 @@ def result(request):
                     
 
         }
-    ins=Compressor(p22=p22,x1=x1,t1=t1)
-    ins.save()
+    #ins=Compressor(p22=p22,x1=x1,t1=t1)
+    #ins.save()
 
 
 
@@ -214,8 +214,8 @@ def heatresult(request):
         'X141':X14
 
     }
-    ins=Heatbalence(L1=L1,X1=X1,T11=T11,T111=T111,T22=T22,Q1=Q1,T33=T33,T44=T44)
-    ins.save()
+    #ins=Heatbalence(L1=L1,X1=X1,T11=T11,T111=T111,T22=T22,Q1=Q1,T33=T33,T44=T44)
+    #ins.save()
 
     return render(request,'heatresult.html',context)
 
@@ -365,8 +365,8 @@ def blowresult(request):
         
         
     }
-    ins=Blower(s1=s1,d1=d1,T1=T1,t81=t81)
-    ins.save()
+    #ins=Blower(s1=s1,d1=d1,T1=T1,t81=t81)
+    #ins.save()
     
     
     
@@ -417,8 +417,8 @@ def morseresult(request):
         'IP1':IP
         
     }
-    ins=Morse(W=W,w11=w11,w22=w22,w33=w33,w44=w44)
-    ins.save()
+    #ins=Morse(W=W,w11=w11,w22=w22,w33=w33,w44=w44)
+    #ins.save()
     
     
     
