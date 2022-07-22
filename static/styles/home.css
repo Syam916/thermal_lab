@@ -436,7 +436,7 @@ th{
         margin-top: 5px;
         margin-left: 50px;
         margin-right: 30px;
-        background-color: rgb(234, 224, 224);
+        background-color: rgb(189, 179, 179);
         height: 52px;
     }
     .n{
@@ -447,7 +447,7 @@ th{
     .n1{
         margin-bottom: 45px;
         margin-left: 0.09px;
-        width:20px;
+        width:18px;
         height: 50px;
     }
     nav {
@@ -873,10 +873,6 @@ th{
         text-align: left;
         padding: 0px;
         font-size: 4px;
-    }
-    .t{
-        font-size: 4px;
-        color: azure;
     }
     
   }
