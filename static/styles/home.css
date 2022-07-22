@@ -435,19 +435,19 @@ th{
     .nbkr{
         margin-top: 5px;
         margin-left: 50px;
-        margin-right: 50px;
-        background-color: rgb(189, 179, 179);
+        margin-right: 30px;
+        background-color: rgb(234, 224, 224);
         height: 52px;
     }
     .n{
         margin-bottom: 45px;
-        width:95px;
+        width:120px;
         height: 50px;
     }
     .n1{
         margin-bottom: 45px;
-        margin-left: 0.3px;
-        width:18px;
+        margin-left: 0.09px;
+        width:20px;
         height: 50px;
     }
     nav {
@@ -459,7 +459,7 @@ th{
     
     nav ul {
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         list-style-type: none;
         overflow: hidden;
         background:rgb(176,196,222);
@@ -485,7 +485,7 @@ th{
     .mech{
         margin-top: 1px;
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         padding-top: 10px;
         padding-left: 20px;
         background-color: rgb(5, 5, 68);
@@ -525,7 +525,7 @@ th{
     .front{
         margin-top: 5px;
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         font-size: 8px;
         color: rgb(5, 5, 68);
         font-family : 'Lobster',cursive; 
@@ -554,7 +554,7 @@ th{
         background:#ADD8E6;
         margin-left: 50px;
         margin-top: 20px;
-        margin-right: 50px;
+        margin-right: 30px;
     }
     .pic1{
         width: auto;
@@ -563,31 +563,41 @@ th{
         border: 1px solid rgb(3, 43, 95);
         border-radius: 8px;
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         margin-top: 10px;
     }
     .pic8{
         width: auto;
-        height: 850px;
+        height: 200px;
         background:#ADD8E6;
-        border: 3px solid rgb(3, 43, 95);
-        border-radius: 15px;
+        border: 2px solid rgb(3, 43, 95);
+        border-radius: 8px;
         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
+        margin-right: 30px;
+        margin-top: 10px;
         border-radius: 15px;
     }
     .pic9{
-        width: 300px;
-        height: 300px;
+        width: 70px;
+        height: 80px;
         background:#e1e5e7;
         border: 1px solid rgb(9, 15, 128);
         border-radius: 15px;
-        margin-left: 40%;
-        margin-top: 40px;
-        border-radius: 15px;
+        margin-left: 35%;
+        margin-top: 5px;
+        border-radius: 4px;
     }
     .pic10{
+        display: inline-block;
+        width: 49px;
+        height: 50px;
+        background:#e1e5e7;
+        border: 1px solid rgb(9, 15, 128);
+        margin-left: 0.7px;
+        margin-top: 4px;
+        border-radius: 6px;
+    }
+    .pic11{
         display: inline-block;
         width: 227px;
         height: 350px;
@@ -600,65 +610,76 @@ th{
     }
     .pic2{
         width: auto;
-        height: 250px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 130px;
+        border: 1px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(180,180,180);
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
     }
     .pic3{
         width: auto;
-        height: 2850px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 1060px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(38,38,38);
         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
+        margin-right: 30px;
+        margin-top: 10px;
     }
+    .picbh{
+        width: auto;
+        height: 900px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
+        background: rgb(38,38,38);
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    
     
     .pich{
         width: auto;
-        height: 3750px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 1250px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(38,38,38);
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         margin-top: 20px;
     }
     .pic4{
         width: auto;
-        height: 400px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 165px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(38,38,38);
         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
+        margin-right: 30px;
+        margin-top: 10px;
     
     }
     
     .pic5{
         width: auto;
-        height: 600px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 300px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(38,38,38);
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         margin-top: 20px;
     }
     .pics2{
         width: auto;
-        height: 250px;
-        border: 5px solid rgb(8, 182, 51);
-        border-radius: 15px;
+        height: 130px;
+        border: 1px solid rgb(8, 182, 51);
+        border-radius: 8px;
         background: rgb(180,180,180);
         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
+        margin-right: 30px;
+        margin-top: 10px;
     }
     .im{
         float:left;
@@ -667,31 +688,41 @@ th{
         height: 130px;
     }
     .i1{
-        margin-top: 20PX;
-        margin-left: 10PX;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        margin-top: 2px;
+        margin-left: px;
+        width: 30px;
+        height: 20px;
+        border-radius: 40%;
     }
     .i2{
         margin-top: 0;
-        margin-left: 10PX;
-        width: 200px;
-        height: 200px;
+        margin-left: 3px;
+        width: 60px;
+        height: 60px;
         border-radius:20px;
     }
     .copic{
-        font-size: 15px;
-        font-family: 'Lobster Two', cursive;
+        padding:0;
+        font-size: 3px;
+        margin: 0px;
     
     }
     .imc{
         float:right;
-        margin-top:100px;
-        margin-right: 100px;
+        margin-top:50px;
+        margin-right: 20px;
         border-radius: 5px;
-        width: 350px;
-        height: 350px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .imb{
+        float:right;
+        margin-top:80px;
+        margin-right: 20px;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
     }
     
     .m{
@@ -706,13 +737,13 @@ th{
         color: rgba(27, 24, 24, 0.815);
     }
     .m1{
-        font-size: 30px;
+        font-size: 8px;
         font-family: 'Rye', cursive;
         color: rgb(48, 168, 215);
         text-decoration: none;
     }
     .m5{
-        font-size: 30px;
+        font-size: 9px;
         font-family: 'Rye', cursive;
         color: rgb(5,5,68);
         text-decoration: none;
@@ -724,13 +755,13 @@ th{
         color: rgba(223, 209, 209, 0.815);
     }
     .t2{
-        font-size: 20px;
-        margin-left: 20px;
+        font-size: 6px;
+        margin-left: 5px;
         font-family: 'Lobster',cursive;
         color: white;
     }
     .t3{
-        font-size: 20px;
+        font-size: 6px;
         margin-left: 20px;
         font-family: 'Oswald', sans-serif;
         color:black;
@@ -739,11 +770,11 @@ th{
     
     .foot{
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 30px;
         background-color: rgb(5, 5, 68);
         height: 50px;
         font-family : 'Lobster',cursive;  
-        font-size: 7px;
+        font-size: 6px;
         color: aliceblue;
         width: auto;
         padding-left: 30px;
@@ -751,9 +782,9 @@ th{
     }
     .im1{
         float:left;
-        width: 20px;
-        height: 30px;
-        padding: 10px;
+        width: 35px;
+        height: 40px;
+        padding: 5px;
         border-radius: 50%;
     }
     .p1{
@@ -772,7 +803,7 @@ th{
     .h2{
         color:skyblue;
         font-family: 'Rye', cursive;
-        font-size: 20px;
+        font-size: 7px;
     
     }
     .exp{
@@ -783,29 +814,32 @@ th{
         background: #ADD8E6;
     }
     .fon{
-        margin-left: 100px;
-        margin-top: 50px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
     label{
-        width: 600px;
+        width: 150px;
         font-family: 'Oswald', sans-serif;
         color: white;
         display: inline-block;
-        font-size: 25px;
+        font-size: 9px;
     
     }
     input{
         padding: 4px;
-        border: 2px solid rgb(118, 118, 173);
-        border-radius: 10px;
-        width: 150px;
-        margin-bottom: 20px;
+        border: 1px solid rgb(118, 118, 173);
+        border-radius: 3px;
+        width: 50px;
+        height: 3px;
+        margin-bottom: 10px;
+        font-size: 5px;
     }
     .sub{
-        margin-left: -250px;
-        border-radius: 10px;
-        width: 300px;
-        height: 40px;
+        margin-left: -40px;
+        border-radius: 5px;
+        width: 100px;
+        height: 20px;
+        font-size:9px;
         font-family: 'Oswald', sans-serif;
         background-color: rgb(30, 112, 112);;
     }
@@ -816,7 +850,7 @@ th{
     
     }
     table{
-        margin-top: 30px;
+        margin-top: 15px;
         border: 1px solid white;
         width: 100%;
         font-family: 'Oswald', sans-serif;
@@ -828,14 +862,21 @@ th{
         border: 1px solid  white;
         border-collapse: collapse;
         text-align: left;
-        padding: 8px;
+        padding: 5px;
+        padding-left: 1px;
+        font-size:6px;
     }
     th{
         border: 1px solid  white;
         color: whitesmoke;
         border-collapse: collapse;
         text-align: left;
-        padding: 8px;
+        padding: 0px;
+        font-size: 4px;
+    }
+    .t{
+        font-size: 4px;
+        color: azure;
     }
     
   }
