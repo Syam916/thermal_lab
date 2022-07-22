@@ -401,8 +401,26 @@ def morseresult(request):
     EF= BP/IP
                 # FRICTIONAL POWER
     FP = IP-BP
+    x1=round(x1,2)
+    x2=round(x2,2)
+    x3=round(x3,2)
+    x4=round(x4,2)
+    L1=round(L1,2)
+    L2=round(L2,2)
+    L3=round(L3,2)
+    L4=round(L4,2)
+    BP=round(BP,2)
+    FP=round(FP,2)
+    IP=round(IP,2)
+    EF=round(EF,2)
     
     context ={
+        'W':W,
+        'w11':w11,
+        'w22':w22,
+        'w33':w33,
+        'w44':w44,
+        'N':N,
         'x11':x1,
         'x22':x2,
         'x33':x3,

@@ -2,108 +2,104 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}"> 
     <link rel="icon" type="image/x-icon" href=" {% static '/images/favi.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .head{
-            color: orangered;
-            font-size: 15px;
-            text-align: center;
-            font-family: Arial;
-            padding-top: 10px;
-        }
-        
-        
-        .main{
-            width:100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('/static/images/1.jpg'); 
-            background-position: center;
-            background-size: cover;
-            height: 109vh;
-        }
-        .se{
-            font-size: 35px;
-            color: white;
-            font-family: 'Times New Roman';
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        .b1{
-            width: 100px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        .b2{
-            width: 180px;
-            height: 40px;
-            font-size: 15px;
-            background: white;
-            color: orangered;
-            border: none;
-            border-radius: 10px;
-            display: inline-block;
-            margin-left: 20px;
-        }
-       
-        .b1:hover{
-            background-color:cyan;
-        
-        }
-        .b2:hover{
-            background-color: cyan;
-        }
-       
+        a.x:hover, a.x:active {color:#000;}
+        a.x:hover, a.x:active {font-size: 170%;}
     </style>
 </head>
-<body>
-    <div class="main">
-        <div class="head">
-            <h1>MORSE TEST</h1>
-        </div>
-        <div class="menu">
-            <a href="index"><button class="b1">HOME</button></a>
-            <a href="morseexp"><button class="b2">HEAT BALENCE TEST</button></a>
+<body class='b1'>
+    <div class="nbkr">
+        <img class="n" src="{% static '/images/logo2.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/a.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/b.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/c.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/d.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/e.jpg' %}" alt="" >
+        <img class="n1" src="{% static '/images/f.jpg' %}" alt="" >
+        
+    </div>
+    <div class="mech">
+        <h1>Department Of Mechanical Engineering</h1>
+    </div>
+    <div class="nav1" >
+        <nav  id="navbar">
+            <ul id="menu">
+
+                <li><a class="x" href="home">Home</a></li>
+                <li><a class="x" href="index">Laboratory</a></li>
+                <li><a class="x" href="heat">Theory</a></li>
+                <li><a class="x" href="heatexp">Practical Experiment</a></li>
+                <li><a class="x" href="contact">About Us</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="pic4">
+        <center><p class="m1"> <a class= "m1">MORSE TEST ON PETROL ENGINE</a></p></center>
+    <table>
+        <tr>
+          <th>Sl no</th>
+          <th>Load in kg</th>
+          <th>Speed in  RPM</th>
+          <th>ENGINE 1 LOAD</th>
+          <th>BRAKE POWER 1</th>
+          <th>Indiacted power 1</th>
+          <th>ENGINE 2 LOAD</th>
+          <th>BRAKE POWER 2</th>
+          <th>Indiacted power 2</th>
+          <th>ENGINE 3 LOAD</th>
+          <th>BRAKE POWER 3</th>
+          <th>Indiacted power 3</th>
+          <th>ENGINE 4 LOAD</th>
+          <th>BRAKE POWER 4</th>
+          <th>Indiacted power 4</th>
+          <th>Total BP KW</th>
+          <th>Total indicated Power KW</th>
+          <th>Efiiciancy Ratio</th>
+          <th>Frictional Power</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>{{W}}</td>
+            <td>{{N}}</td>
+            <td>{{w11}}</td>
+            <td>{{x11}}</td>
+            <td>{{L11}}</td>
+            <td>{{w22}}</td>
+            <td>{{x22}}</td>
+            <td>{{L22}}</td>
+            <td>{{w33}}</td>
+            <td>{{x33}}</td>
+            <td>{{L33}}</td>
+            <td>{{w44}}</td>
+            <td>{{x44}}</td>
+            <td>{{L44}}</td>
+            <td>{{BP1}}</td>
+            <td>{{IP1}}</td>
+            <td>{{EF1}}</td>
+            <td>{{FP1}}</td>
             
-        </div>
-        <pre class="se">
---->LOAD AT CYLINDER 1 IS : {{x11}} 
+        </tr>
+    </table>
 
---->LOAD AT CYLINDER 1 : {{x22}} 
+    </div>
+    <div class="foot">
+        <footer>
+            <img class="im1" src="{% static '/images/3.jpg' %}" alt="" >
+            
+            <P class="p1"> © N.B.K.R INSTITUTE OF SCIENCE & TECHNOLOGY  2020 - 2023 </p> 
+            <p class="p1">Devoloped by Mechaical Engineering Students</p>
 
---->LOAD AT CYLINDER 1  : {{x33}} 
-
---->LOAD AT CYLINDER 1  : {{x44}} 
-
---->indicatd power of 1st cylinder IS :  {{L11}} KW
-
---->indicatd power of 1st cylinder: {{L22}} KW
-
---->indicatd power of 1st cylinder : {{L33}} KW
-
---->indicatd power of 1st cylinder :{{L44}} 
-
---->BRAKE POWER IS :{{BP1}} 
-
---->INDICATED POWER IS :{{IP1}} 
-
---->MECHANICAL EFFICIANCY :{{EF1}} %
-
---->FRICTIONAL POWER :{{FP1}} 
-        </pre>
-
+            
+        </footer>
     </div>
 </body>
 </html>

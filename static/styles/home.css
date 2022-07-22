@@ -167,7 +167,7 @@ li a.active {
 }
 .pic10{
     display: inline-block;
-    width: 227px;
+    width: 200px;
     height: 350px;
     background:#e1e5e7;
     border: 1px solid rgb(9, 15, 128);
@@ -188,6 +188,16 @@ li a.active {
 .pic3{
     width: auto;
     height: 2850px;
+    border: 5px solid rgb(8, 182, 51);
+    border-radius: 15px;
+    background: rgb(38,38,38);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.picbh{
+    width: auto;
+    height: 2450px;
     border: 5px solid rgb(8, 182, 51);
     border-radius: 15px;
     background: rgb(38,38,38);
@@ -245,11 +255,11 @@ li a.active {
     height: 250px;
 }
 .i1{
-    margin-top: 20PX;
-    margin-left: 10PX;
+    margin-top: 20px;
+    margin-left: 0px;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 .i2{
     margin-top: 0;
@@ -278,7 +288,7 @@ li a.active {
     color: rgb(5, 5, 68);
 }
 .t{
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 120px;
     font-family: 'Oswald', sans-serif;
     color: rgba(27, 24, 24, 0.815);
@@ -308,7 +318,7 @@ li a.active {
     color: white;
 }
 .t3{
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 20px;
     font-family: 'Oswald', sans-serif;
     color:black;
