@@ -486,7 +486,7 @@ th{
     }
     li a {
         text-decoration: none;
-        font-family : 'Lobster',cursive;  
+        font-family : 'Lobster';  
     }
     li a.active {
         background-color: #3f3cd3;
@@ -500,7 +500,7 @@ th{
         padding-left: 20px;
         background-color: rgb(5, 5, 68);
         height: 30px;
-        font-family : 'Lobster',cursive;  
+        font-family: 'Lobster';  
         font-size: 5px;
         color: aliceblue;
         width: auto;
@@ -538,7 +538,7 @@ th{
         margin-right: 30px;
         font-size: 8px;
         color: rgb(5, 5, 68);
-        font-family : 'Lobster',cursive; 
+        font-family : 'Lobster'; 
     }
     
     .about{
@@ -767,7 +767,7 @@ th{
     .t2{
         font-size: 6px;
         margin-left: 5px;
-        font-family: 'Lobster',cursive;
+        font-family: 'Lobster';
         color: white;
     }
     .t3{
@@ -783,7 +783,7 @@ th{
         margin-right: 30px;
         background-color: rgb(5, 5, 68);
         height: 50px;
-        font-family : 'Lobster',cursive;  
+        font-family : 'Lobster';  
         font-size: 6px;
         color: aliceblue;
         width: auto;
