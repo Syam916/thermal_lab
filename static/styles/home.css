@@ -281,6 +281,14 @@ li a.active {
     width: 350px;
     height: 350px;
 }
+.imb{
+    float:right;
+    margin-top:150px;
+    margin-right: 100px;
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+}
 
 .m{
     font-size: 35px;
