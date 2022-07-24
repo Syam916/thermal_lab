@@ -195,6 +195,16 @@ li a.active {
     margin-right: 50px;
     margin-top: 20px;
 }
+.picb1{
+    width: auto;
+    height: 2350px;
+    border: 5px solid rgb(8, 182, 51);
+    border-radius: 15px;
+    background: rgb(38,38,38);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
 .picbh{
     width: auto;
     height: 2450px;
