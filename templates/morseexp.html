@@ -48,19 +48,19 @@
             <form class="fon"action="morseresult" method="POST">
                 {% csrf_token %}
                 <label>--> Enter the load in kgf :</label>
-                <input type="text" name="w" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="w" placeholder="Enter" required><br>
                 
                 <label>--> Enter the 1st load for engine:</label>
-                <input type="text" name="w1" placeholder="Enter " required><br>
+                <input type="number" step="0.01" name="w1" placeholder="Enter " required><br>
                 
                 <label>--> Enter the 2nd load for engine :</label>
-                <input type="text" name="w2" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="w2" placeholder="Enter" required><br>
 
                 <label>--> Enter the 3rd load for engine :</label>
-                <input type="text" name="w3" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="w3" placeholder="Enter" required><br>
                 
                 <label>--> Enter the 4th load for engine :</label>
-                <input type="text" name="w4" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="w4" placeholder="Enter" required><br>
                 
                 <center>
                     <a href=""><button class="sub">CLICK TO PROCEEED</button></a>

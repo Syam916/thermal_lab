@@ -47,13 +47,13 @@
             <form class="fon"action="bhp3result" method="POST">
                 {% csrf_token %}
                 <label>-->Enter the Load :</label>
-                <input type="text" name="L" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="L" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Manometric Reading :</label>
-                <input type="text" name="X" placeholder="Enter " required><br>
+                <input type="number" step="0.01" name="X" placeholder="Enter " required><br>
                 
                 <label>--> Enter the Time taken for Fuel Consumption:</label>
-                <input type="text" name="T" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T" placeholder="Enter" required><br>
                 
                 <center>
                     <a href="bhp3result"><button class="sub">CLICK TO PROCEEED</button></a>

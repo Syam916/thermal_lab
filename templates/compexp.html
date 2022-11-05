@@ -48,13 +48,13 @@
             <form class="fon"action="result" method="POST">
                 {% csrf_token %}
                 <label>-->Enter the delivery Pressure :</label>
-                <input type="text" name="p2" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="p2" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Pressure Head :</label>
-                <input type="text" name="x" placeholder="Enter " required><br>
+                <input type="number" step="0.01" name="x" placeholder="Enter " required><br>
                 
                 <label>--> Enter the Time taken :</label>
-                <input type="text" name="t" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="t" placeholder="Enter" required><br>
                 
                 <center>
                     <a href="result"><button class="sub">CLICK TO PROCEEED</button></a>

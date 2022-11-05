@@ -48,16 +48,16 @@
             <form class="fon"action="blowresult" method="POST">
                 {% csrf_token %}
                 <label>--> Enter the Static Head :</label>
-                <input type="text" name="s" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="s" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Delivery Head :</label>
-                <input type="text" name="d" placeholder="Enter " required><br>
+                <input type="number" step="0.01" name="d" placeholder="Enter " required><br>
                 
                 <label>--> Enter the Temperature :</label>
-                <input type="text" name="T" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T" placeholder="Enter" required><br>
 
                 <label>--> Enter the Time taken :</label>
-                <input type="text" name="t" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="t" placeholder="Enter" required><br>
                 
                 
                 <center>

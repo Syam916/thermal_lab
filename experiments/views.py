@@ -46,9 +46,9 @@ def compd(request):
 
 def result(request):
 
-    p22=int(request.POST['p2'])
+    p22=float(request.POST['p2'])
     x1=float(request.POST['x'])
-    t1=int(request.POST['t'])
+    t1=float(request.POST['t'])
     T=30
     p1=1.033
     p3 = p22+p1

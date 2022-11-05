@@ -47,28 +47,28 @@
             <form class="fon" action="heatresult" method="POST">
                 {% csrf_token %}
                 <label>--> Enter the load in Kgf :</label>
-                <input type="text" name="L" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="L" placeholder="Enter" required><br>
                 
                 <label>--> Enter the  manometric reading  :</label>
-                <input type="text" name="X" placeholder="Enter " required><br>
+                <input type="number" step="0.01" name="X" placeholder="Enter " required><br>
                 
                 <label>-->Enter the  time taken for reading  :</label>
-                <input type="text" name="T" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T" placeholder="Enter" required><br>
 
                 <label>-->Enter the time Inlet Water Temperature :</label>
-                <input type="text" name="T1" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T1" placeholder="Enter" required><br>
 
                 <label>-->Enter the time Outlet  Water Temperature :</label>
-                <input type="text" name="T2" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T2" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Quantity of Cooling Water  :</label>
-                <input type="text" name="Q" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="Q" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Exhaust Gas Temperature  :</label>
-                <input type="text" name="T3" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T3" placeholder="Enter" required><br>
                 
                 <label>--> Enter the Ambeint Air Temperature  :</label>
-                <input type="text" name="T4" placeholder="Enter" required><br>
+                <input type="number" step="0.01" name="T4" placeholder="Enter" required><br>
                 
                 
                 
