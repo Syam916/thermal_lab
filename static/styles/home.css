@@ -336,7 +336,7 @@ li a.active {
     color: white;
 }
 .t3{
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 20px;
     font-family: 'Oswald', sans-serif;
     color:black;
@@ -448,7 +448,7 @@ th{
 
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width:600px) {
     /* For mobile phones: */
     *{
         padding: 0;
@@ -456,7 +456,7 @@ th{
     }
     
     .b1{
-        margin: 0;
+        margin: 0px;
         padding: 0;
         background-color: rgba(220, 220, 220, 0.767);
     }
@@ -475,7 +475,7 @@ th{
     .n1{
         margin-bottom: 45px;
         margin-left: 0.09px;
-        width:18px;
+        width:42px;
         height: 50px;
     }
     nav {
@@ -596,16 +596,26 @@ th{
     }
     .pic8{
         width: auto;
-        height: 200px;
+        height: 180px;
         background:#ADD8E6;
         border: 2px solid rgb(3, 43, 95);
         border-radius: 8px;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 30px;
         margin-top: 10px;
         border-radius: 15px;
+        display: flex;
+        flex-wrap: nowrap;
     }
     .pic9{
+        margin: 5px;
+        height: 150px;
+    }
+    .pic10{
+        height: 150px;
+        margin: 3px;
+    }
+    /* .pic9{
         width: 70px;
         height: 80px;
         background:#e1e5e7;
@@ -624,7 +634,7 @@ th{
         margin-left: 0.7px;
         margin-top: 4px;
         border-radius: 6px;
-    }
+    } */
     .pic11{
         display: inline-block;
         width: 227px;
@@ -656,6 +666,16 @@ th{
         margin-top: 10px;
     }
     .picbh{
+        width: auto;
+        height: 900px;
+        border: 2px solid rgb(8, 182, 51);
+        border-radius: 8px;
+        background: rgb(38,38,38);
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    .picb1{
         width: auto;
         height: 900px;
         border: 2px solid rgb(8, 182, 51);
@@ -716,11 +736,10 @@ th{
         height: 130px;
     }
     .i1{
-        margin-top: 2px;
-        margin-left: px;
-        width: 30px;
-        height: 20px;
+        width: 60px;
+        height: 60px;
         border-radius: 40%;
+        margin: 2px;
     }
     .i2{
         margin-top: 0;
@@ -730,9 +749,9 @@ th{
         border-radius:20px;
     }
     .copic{
-        padding:0;
-        font-size: 3px;
-        margin: 0px;
+        font-size: 5px;
+        line-height: normal;
+        font-weight: bold;
     
     }
     .imc{
@@ -759,7 +778,7 @@ th{
         color: rgb(5, 5, 68);
     }
     .t{
-        font-size: 5.5px;
+        font-size: 8px;
         margin-left: 100px;
         font-family: 'Oswald', sans-serif;
         color: rgba(27, 24, 24, 0.815);
@@ -789,7 +808,7 @@ th{
         color: white;
     }
     .t3{
-        font-size: 6px;
+        font-size: 8px;
         margin-left: 20px;
         font-family: 'Oswald', sans-serif;
         color:black;
@@ -831,7 +850,7 @@ th{
     .h2{
         color:skyblue;
         font-family: 'Rye', cursive;
-        font-size: 7px;
+        font-size: 9px;
     
     }
     .exp{
