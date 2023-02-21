@@ -444,15 +444,15 @@ def morseresult(request):
     return render(request,'morseresult.html',context)
 
 
-    def naturalConvection(request):
+    # def naturalConvection(request):
         
-        voltage=float(request.POST['volt'])
-        current=float(request.POST['curr'])
-        T2=int(request.POST['T2'])
-        T3=int(request.POST['T3'])
-        T4=int(request.POST['T4'])
-        T5=int(request.POST['T5'])
-        T6=int(request.POST['T6'])
-        T7=int(request.POST['T7'])
+    #     voltage=float(request.POST['volt'])
+    #     current=float(request.POST['curr'])
+    #     T2=int(request.POST['T2'])
+    #     T3=int(request.POST['T3'])
+    #     T4=int(request.POST['T4'])
+    #     T5=int(request.POST['T5'])
+    #     T6=int(request.POST['T6'])
+    #     T7=int(request.POST['T7'])
 
 

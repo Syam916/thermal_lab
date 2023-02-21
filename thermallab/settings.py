@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xssw0@esb&*j8+q2$e26u0eojz#*aqy&_@6fzm7j_ef0)$%f0)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-CSRF_TRUSTED_ORIGINS = ['https://mech-thermallab.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://thermallab.up.railway.app']
 
 ALLOWED_HOSTS = [ "*"]
 
