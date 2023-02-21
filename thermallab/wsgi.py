@@ -1,5 +1,5 @@
 """
-WSGI config for theramllab project.
+WSGI config for thermallab project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
