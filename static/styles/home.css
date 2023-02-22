@@ -474,8 +474,8 @@ th{
     }
     .n1{
         margin-bottom: 45px;
-        margin-left: 0.09px;
-        width:18px;
+        margin-left: 1.2px;
+        width:40px;
         height: 50px;
     }
     nav {
@@ -503,8 +503,10 @@ th{
         font-size: 6px;
     }
     li a {
+        
         text-decoration: none;
-        font-family : 'Lobster';  
+        
+        font-size: 13px; 
     }
     li a.active {
         background-color: #3f3cd3;
@@ -596,7 +598,7 @@ th{
     }
     .pic8{
         width: auto;
-        height: 200px;
+        height: 850px;
         background:#ADD8E6;
         border: 2px solid rgb(3, 43, 95);
         border-radius: 8px;
@@ -606,8 +608,8 @@ th{
         border-radius: 15px;
     }
     .pic9{
-        width: 70px;
-        height: 80px;
+        width: 120px;
+        height: 150px;
         background:#e1e5e7;
         border: 1px solid rgb(9, 15, 128);
         border-radius: 15px;
@@ -616,13 +618,15 @@ th{
         border-radius: 4px;
     }
     .pic10{
-        display: inline-block;
-        width: 49px;
-        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        margin-left: 140px;
+        margin-top: 10px;
         background:#e1e5e7;
         border: 1px solid rgb(9, 15, 128);
-        margin-left: 0.7px;
-        margin-top: 4px;
         border-radius: 6px;
     }
     .pic11{
@@ -718,22 +722,23 @@ th{
     .i1{
         margin-top: 2px;
         margin-left: px;
-        width: 30px;
-        height: 20px;
+        width: 80px;
+        height: 80px;
         border-radius: 40%;
     }
     .i2{
         margin-top: 0;
         margin-left: 3px;
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
         border-radius:20px;
     }
     .copic{
-        padding:0;
-        font-size: 3px;
-        margin: 0px;
+        font-size: 8px;
     
+    }
+    .copic h4{
+        margin-top: 0px;
     }
     .imc{
         float:right;
