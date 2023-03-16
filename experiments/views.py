@@ -117,8 +117,12 @@ def result(request):
                     
 
         }
-    #ins=Compressor(p22=p22,x1=x1,t1=t1)
-    #ins.save()
+    ins=Compressor(Delivery_pressure=p22,
+                   pressure_head_cm=x1,
+                   time=t1,
+                   volumetric_efficiency=v2,
+                   power_input=PI)
+    ins.save()
 
 
 

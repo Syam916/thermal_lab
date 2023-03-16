@@ -2,9 +2,12 @@ from django.db import models
 
 # Create your models here.
 class Compressor(models.Model):
-    p22=models.CharField(max_length=10)
-    x1=models.CharField(max_length=10)
-    t1=models.CharField(max_length=10)
+    Delivery_pressure=models.CharField(max_length=10)
+    pressure_head_cm=models.CharField(max_length=10)
+    time=models.CharField(max_length=10)
+    volumetric_efficiency=models.CharField(max_length=10)
+    power_input=models.CharField(max_length=10)
+
     
 class Blower(models.Model):
     s1=models.CharField(max_length=10)
