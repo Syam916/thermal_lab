@@ -117,11 +117,20 @@ def result(request):
                     
 
         }
-    ins=Compressor(Delivery_pressure=p22,
-                   pressure_head_cm=x1,
+    ins=Compressor(Delivery_pressure_Guage=p22,
+                   Delivery_pressure_Absolute=p3,
+                    pressure_ratio=PR,
+                    pressure_head_cm=x1,
+                    pressure_head_m=h,
                    time=t1,
                    volumetric_efficiency=v2,
-                   power_input=PI)
+                   power_input=PI,
+                   Isothermal_power=IP,
+                    Adiabatic_power=AP,
+                    Isothermal_efficiancy=IE1,
+                    Adiabatic_efficiancy=AE1,
+                    Efficiancy_ratio=E
+                   )
     ins.save()
 
 
